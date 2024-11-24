@@ -1,5 +1,5 @@
 pub mod proto {
-    include!(concat!(env!("OUT_DIR"), "/krec.proto.rs"));
+    include!(concat!(env!("OUT_DIR"), "/protos/krec.rs"));
 }
 
 pub use proto::{

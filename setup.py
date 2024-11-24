@@ -25,7 +25,7 @@ version: str = version_re.group(1)
 class RustBuildExt(build_ext):
     def run(self) -> None:
         # Generate the stub file
-        subprocess.run(["cargo", "run", "--bin", "stub_gen", "--package", "bindings"], check=True)
+        subprocess.run(["cargo", "run", "--bin", "stub_gen"], check=True)
 
         # Move the generated stub file to parent directory
         src_file = "krec/bindings/bindings.pyi"

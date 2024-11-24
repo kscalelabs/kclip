@@ -1,7 +1,6 @@
 use crate::proto::{KRecFrame, KRecHeader};
 use bytes::BytesMut;
 use color_eyre::Result;
-use prost::Message;
 use std::fs::File;
 use std::io::{Read, Write};
 use tracing::{debug, info, instrument};

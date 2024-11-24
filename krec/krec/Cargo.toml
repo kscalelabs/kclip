@@ -1,0 +1,23 @@
+[package]
+
+name = "krec"
+version.workspace = true
+edition.workspace = true
+description = "K-Scale robot action format"
+license = "MIT"
+authors = ["Denys Bezmenov <denys@kscale.dev>"]
+
+[dependencies]
+
+prost = "0.13"
+bytes = "1"
+thiserror = "1.0"
+eyre = "0.6"
+color-eyre = "0.6"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[build-dependencies]
+
+prost-build = "0.12"
+tonic-build = "0.12"
